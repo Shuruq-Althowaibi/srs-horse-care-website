@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family:'Quicksand', sans-serif; 
+  text-decoration: none;
+  scroll-behavior:smooth ;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image6-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;  /* Change is here */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ /*header start */
+ header{
+  width: 100%;
+  height: 10vh;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  color:#ffffff;
+  margin-top: 19px;
+  margin-left: 50px;
+  font-size:28px;
+  font-family:'Quicksand', sans-serif; 
+  padding-left:20px;
+  float:left;
+  padding-top:8px;
+}
+
+img{
+  padding-left:20px;
+  float:left;
+  width: 140px;
+  margin-left: -160px;
+  margin-top:-3px;
+}
+
+.menu{
+  display: flex;
+  margin-right: 10px;
+  margin-top: 15px;
+  position: relative;
+  list-style-type: none;
+}
+
+.menu li a{
+  align-items: normal;
+  padding: 13px 11px;
+  color: #fff;
+  font-size: 20px;
+  font-weight :700;
+  transition: all 0.3s;
+  border: 22% solid #95c095;
+}
+
+.menu li a:hover{
+  color:#C4B2A0;
+  border-bottom: 2px  solid #fff;
+}
+/*header end */
+
+/*section start*/
+section{
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 90.5vh;
+  padding: 100px;
+}
+
+section ::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top,#95c095,transparent);
+}
+
+section h1{
+ font-size: 45px;
+ color: #fff;
+ margin: 0;
+}
+
+section .primary-text{
+  color:#95c095;
+}
+
+section p{
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 14px;
+  color:#fff
+}
+
+section .btn{
+  display: inline-block;
+  padding: 10px;
+  border: none;
+  margin:13px;
+  border-radius: 17px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+section .btn:hover{
+  background:#95c095;
+  color:#111;
+}
+/*section end*/
+
+.sec{
+  position: relative;
+  padding: 125px;
+  background: #C4B2A0;
+}
+
+.sec h2{
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 1300;
+  color:#fff;
+}
+
+.sec .content p{
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: 530;
+  color:black;
+}
+
+.sec .content h4{
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 1300;
+  color:#fff;
+}
+
+/*fotter Start*/
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+
+.footer.slide-down {
+  transform: translateY(100%);
+}
+
+.container{
+max-width: 1900px;
+margin: auto;
+align-content:space-around;
+}
+
+.row{
+  display: flex;
+  flex-wrap:wrap;
+  background: #415441;
+}
+
+ul{
+  list-style-type: none;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+  font-weight: 550;
+  position: relative;
+}
+
+.footer-col h3::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom:-3px;
+  background-color:#1F1F1F;
+  height: 2px;
+  width: 30px;
+  box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+display: block;
+font-size: 14px;
+text-transform: capitalize;
+text-decoration: none;
+color: #fff;
+font-weight: 300;
+transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color: #C4B2A0;
+  padding-left: 10px;
+}
+
+.footer-col .copyright {
+  position: absolute;
+  top: 28%;
+  border:0px solid;
+  padding-right: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin-left:20%;
+  font-weight: 450;
+}
+/*fotter End*/
+
